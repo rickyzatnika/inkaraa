@@ -1,0 +1,70 @@
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background: hsl(0 0% 0% / 0.5);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    left: 0; top: 0; right: 0; bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding: 0 6%;
+  }
+  
+  .modalContainer {
+    width: 500px;
+    height: 300px;
+    border-radius: 12px;
+    background: hsl(0 0% 100% / 1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    position: relative;
+  }
+  
+  .modalContainer .modalTitle {
+    display: inline-block;
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-weight: bold !important;
+    border-bottom: 1px solid rgb(196, 193, 193);
+  }
+  .modalContainer .modalTitle h1{
+    color: var(--thirty-color);
+    font-size: calc(1.2vw + 1.4vh + 1vmin);
+  }
+  .modalContainer .modalBody {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .modalContainer .modalBody p {
+    font-size: calc(0.5vw + 0.8vh + 1vmin);
+    text-align: center;
+    color: rgb(94, 93, 93);
+  }
+  .modalContainer .modalFooter {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.CloseButton {
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(70, 70, 70);
+    position: absolute;
+    right: 0; top: 0;
+    padding: .2rem;
+    margin: .5rem;
+    border: 1px solid rgb(124, 124, 124);
+    border-radius: 50%;
+}

@@ -1,0 +1,133 @@
+
+
+
+.form_ticket {
+    width: 100%;
+    background: linear-gradient(217deg, rgba(255, 153, 0, 0.8), rgba(255, 136, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(212, 219, 181, 0.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(248, 15, 15, 0.8), rgba(0,0,255,0) 70.71%);
+    background-position: center;
+    background-size: cover;
+    padding: 2rem 0;
+    align-items: center;
+    margin: 0;
+  }
+  .formTitle {
+    text-align: center;
+    margin: 8vh auto;
+    color: var(--thirty-color);
+    font-weight: bold;
+    text-shadow:  1px 1px 3px  rgba(34, 34, 34, 0.541);
+    font-size: calc(1.2vw + 1.5vh + 2vmin);
+  }
+  .Form {
+    width: 100%;
+   
+  }
+  option.pilih_ticket {
+    color: rgb(199, 35, 35) !important;
+  }
+
+  .Form_Control {
+    background: linear-gradient(to bottom, hsl(0 0% 0% / 0.125), hsl(0 0% 0% / 0.0));
+    box-shadow: 3px 3px 8px 1px rgba(100, 63, 27, 0.26);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    
+  }
+  .LayoutTiket {
+    width: 100%;
+  }
+  
+  .GridForm {
+    
+    width: 100%;
+    margin: auto;
+    padding: 0 1%;
+  }
+  .ticketLinks {
+    text-align: center;
+  }
+  .ticketLinks a {
+    margin: 2rem 0;
+  }
+  
+.button {
+    margin: 1rem 0;
+    border: none;
+    outline: none;
+    position: relative;
+    background: #fdc830; 
+    background: -webkit-linear-gradient(to right, #fdc830, #f37335); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdc830, #f37335);
+    background-size: 200% 100%;
+    padding: calc(0.1rem + 0.2vw + 0.001vh + 1vmin);
+    color: rgb(228, 228, 228);
+    box-shadow: unset !important;
+    border-radius: 10px;
+    font-size: calc(0.50vw + 0.50vh + 1vmin);
+    transition: 0.3s linear;
+}
+  
+.button:before {
+    content: '';
+    background: linear-gradient(45deg, #00a2ff, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+.button:active:after {
+    background: transparent;
+}
+.button:hover:before {
+    opacity: 1;
+}
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+  
+  @media screen and (max-width: 940px) {
+    .GridForm {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+    
+    }
+    .LayoutTiket {
+      width: 100%;
+      margin-top: 4vh;
+    }
+    .button {
+      padding: calc(0.2rem + 0.05vw + 0.06vh + 1vmin);
+      font-size: calc(1vw + 1vh + 1vmin);
+    }
+    .LayoutTiket {
+      margin-top: 2rem !important;
+    }
+    
+    
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    .button {
+      padding: calc(0.5rem + 0.2vw + 0.1vh + 1vmin);
+      font-size: calc(1vw + 1vh + 1vmin);
+    }
+   
+    
+    
+  }

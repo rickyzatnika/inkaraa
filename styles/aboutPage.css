@@ -1,0 +1,125 @@
+.about {
+    width: 100%;
+    max-width: 100vw;
+    position: relative;
+}
+.aboutsPages-container {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 ;
+    padding: 0;
+    position: relative;
+   
+}
+
+.aboutsPages-container img {
+    width: 100%;
+   
+}
+.taglineAbout {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    bottom: 10%;
+    left: 0; right: 0;
+    text-align: center;
+}
+.taglineAbout h3{
+    font-size: 2.8vw;
+    text-shadow: 1px 3px 5px rgb(5, 5, 5);
+    text-transform: uppercase;
+    color: #c5c5b8;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid rgba(185, 105, 14, 0.76) ;
+    
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 1.2rem;
+}
+
+
+.aboutPage-content {
+    background-image: linear-gradient(90deg, #f8f8f8  0%,#dadaf77a 100%);
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    padding: 4rem 6%;
+    margin: auto;
+    position: relative;
+}
+.aboutPage-content p {
+    color: var(--parag-dark);
+    font-size: calc(12px + 0.5vw );
+}
+
+.text-start {
+    font-size: calc(0.8vw + 0.8vh + 2vmin);
+    font-weight: bold;
+    color: var(--thirty-color);
+    text-emphasis:inherit;
+    font-style: italic;
+    text-decoration: underline;
+    
+}
+.text-end{
+    font-size: calc(0.8vw + 0.8vh + 2vmin);
+    font-weight: bold;
+    color: var(--thirty-color);
+    font-style: italic;
+    text-decoration: underline;
+    
+}
+.Our-parag {
+    font-style: italic;
+    font-weight: bold;
+    font-size: calc(0.1vw + 0.1vh + 1vmin);
+}
+.end {
+    text-align: end;
+}
+
+.OurValue {
+    width: 100%;
+    max-width: 100vw;
+    margin: 5vh auto;
+    padding: 0;
+    flex-wrap: nowrap;
+    
+}
+.OurValue h3 {
+    font-size: calc(1vw + 1vh + 2vmin);
+    font-weight: bold;
+    color: var(--thirty-color);
+    border-bottom: 1px solid var(--thirty-color);
+    padding: .5rem;
+}
+.value-container {
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+.value-container ul {
+    list-style: outside;
+}
+.value-container ul li span {
+    font-weight: bold;
+    color: var();
+}
+
+
+
+@media screen and (max-width: 940px) {
+    .aboutPage-content {
+        padding: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .aboutPage-content {
+        padding: 1rem;
+    }
+}

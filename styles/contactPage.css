@@ -1,0 +1,243 @@
+.contacts {
+    width: 100%;
+    background: linear-gradient(374deg, #f6f6f6, rgba(124, 126, 236, 0.753));
+}
+.contact-container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 2rem 4%;
+}
+.contact-title {
+    display: flex;
+    justify-content: center;
+    flex-basis: 70%;
+}
+.contact-title h2 {
+    font-size: calc(1.2vw + 1.5vh + 2vmin);
+    border-bottom: 1px solid rgb(233, 232, 232);
+    padding: .8rem;
+    color: #f6f6f6;
+    text-shadow: 2px 3px 3px #a2b0ce;
+    line-height: 1.4;
+}
+
+.getInTouch {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 6rem auto;
+}
+.getInTouch h3 {
+    padding: 1rem;
+    color: rgb(231, 231, 231);
+    font-weight: bold;
+    text-shadow: 0 0 5px #6d7b9c;
+}
+.getInTouch h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgb(233, 232, 232);
+    box-shadow: 0 0 8px #929fbd;
+    z-index: 2;
+}
+.getInTouch h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 1px;
+    background: #929fbd;
+    box-shadow: 0 0 8px #929fbd;
+    z-index: 2;
+}
+
+/* Contact Content */
+
+
+
+
+
+.container-content {
+    width: 100%;
+    background: rgba(85, 85, 85, 0.096);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem;
+}
+.contact-form {
+    flex-basis: 60%;
+}
+
+
+.form-floating label{
+    color: rgb(100, 100, 100) !important;
+}
+
+
+.form-floating input, #floatingTextarea2 {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: none;
+    box-shadow: none;
+    border-bottom: 1px solid #a2b0ce;
+    margin-bottom: 1rem;
+    
+}
+
+.form-floating input:focus, #floatingTextarea2:focus {
+    outline: none;
+    box-shadow: inset -3px -3px 5px #5253553b , inset 3px 3px 5px #ffffffa8;
+    background: #1150cf13;
+    color: rgb(39, 39, 39) !important;
+}
+
+button.bton {
+    margin-top: 1.5rem;
+    color: white;
+    padding: .8rem 2.2rem;
+    background: #a2b0ce;
+    transition: .1s linear;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+button:hover.bton{
+    color: #ccd8ee;
+    background: #929fbd;
+}
+
+
+
+/* Right Content */
+
+
+
+.right-flex {
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    background: linear-gradient(to left, rgba(238, 241, 248, 0.671) 5%, rgba(124, 126, 236, 0.137));
+    padding: 2rem;
+    box-shadow: 2px 2px 3px 1px #d8ddec8a;
+
+}
+
+.right-title {
+    display: flex;
+    flex-direction: column;
+ 
+    
+}
+.right-title h5 {
+    font-size: 1.2rem;
+    margin: 1.2rem 0;
+    font-weight: bold;
+    color: rgb(90, 141, 216);
+    text-decoration: underline;
+}
+
+.phone-icon {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.icon {
+    color: rgb(90, 141, 216);
+}
+
+.phone-icon-content strong, p , address {
+   color: #555;
+}
+
+
+@media screen and (max-width: 940px) {
+
+    .contact-title {
+        flex-basis: 100%;
+    }
+    .getInTouch {
+    
+        margin: 25vh auto;
+        margin-bottom: 6vh !important;
+    }
+
+
+
+
+
+
+
+    .right-title h5 {
+        font-size: calc(1.2vw + 1.2vh + 1vmin);
+        font-weight: 700;
+    }
+    
+
+    .contact-container {
+        gap: 4rem;
+        flex-wrap: wrap;
+        padding: 2rem 2%;
+    }
+    .container-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        justify-content: center !important;
+    }
+    .right-flex {
+        margin: 4rem 0;
+        padding: 2rem;
+        flex-basis: 100%;
+        width: 100%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .container-content {
+        padding: 1rem;
+        margin: 0;
+    }
+    .getInTouch {
+    
+        margin: 15vh auto;
+        margin-bottom: 3vh !important;
+    }
+    .getInTouch h3 {
+        font-size: calc(1vh + 1vw + 2vmin);
+    }
+    .contact-form {
+        padding: 1rem;
+      
+    }
+    .Form-Contact {
+        width: 100%;
+    }
+
+    .right-title {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 496px) {
+    .getInTouch {
+    
+        margin: 10vh auto;
+       
+    }
+}

@@ -1,0 +1,326 @@
+
+.Footer__container {
+    width: 100%;
+    padding: 2rem 0;
+    background-color: #262627;
+}
+.Footer__flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.Footer__logo {
+    flex-basis: 40%;
+}
+.Footer__logo img {
+    cursor: pointer;
+    transition: .3s linear;
+}
+.Footer__logo img:hover {
+    transform: scale(0.9);
+}
+.Footer__logo p {
+    margin-top: 1rem;
+    color: rgb(134, 134, 134);
+    line-height: 1.5rem;
+    font-size: 0.925rem;
+}
+
+.Footer__menu {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    flex-basis: 15%;
+}
+.Footer__container h4 {
+    color: #bebebe;
+    font-size: 1rem;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    border-bottom: 1px solid #565657;
+    width: fit-content;
+}
+.Footer__menu ul li a{
+    line-height: 2rem;
+    text-decoration: none;
+    color: rgb(122, 122, 122);
+    font-size: 0.8rem;
+}
+.Footer__menu ul li a:hover{
+    color: rgb(175, 174, 174);
+    text-decoration: underline 2px rgb(122, 122, 122);
+}
+
+.Footer__support {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+    margin: 0 auto;
+    
+}
+
+
+.Footer__support ul li a {
+    line-height: 2rem;
+    text-decoration: none;
+    color: rgb(122, 122, 122);
+    position: relative;
+    right: 18%;
+    font-size: 0.8rem;
+}
+.Footer__support ul li a:hover{
+    color: rgb(175, 174, 174);
+    text-decoration: underline 2px rgb(122, 122, 122);
+}
+
+.Footer__newsletter {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+}
+.Footer__newsletter p {
+    color: rgb(134, 134, 134);
+    font-size: 0.8rem;
+}
+.newsForm {
+    display: flex;
+    flex-direction: column;
+}
+.newsForm input {
+    padding: .5rem;
+    outline: unset;
+    border: unset;
+}
+.newsForm input:focus {
+    outline: 2px solid #c47418;
+    background: transparent;
+    color: rgb(214, 214, 214);
+}
+.newsForm .buttons:focus {
+    outline: 2px solid #c47418;
+    background: rgb(53, 53, 53);
+    color: rgb(214, 214, 214);
+}
+
+.newsForm .buttons {
+    border: none;
+    outline: unset;
+    padding: .7rem;
+    color: #bbbaba;
+    margin: 1rem 0;
+    font-weight: 400;
+    transition: all .5s ease-in-out;
+    position: relative;
+    background: linear-gradient(to right, #c47418, #bd5210);
+}
+.newsForm:hover .buttons{
+    background: linear-gradient(to left, #c47418, #bd5210);
+    color: white;
+    transition: all .5s ease-in-out;
+}
+.copyright {
+  
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: .5rem;
+    color: rgb(150, 150, 150);
+    width: 100% ;
+    font-size: 0.9rem;
+   
+    background-color: #212122;
+}
+.copyright a {
+    
+    font-weight: 400;
+    color: goldenrod !important;
+    transition: .2s linear;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 940px) {
+    .Footer__container {
+        width: 100%;
+        padding: .2rem;
+       
+    }
+    .Footer__flex {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .Footer__container h4 {
+        margin-top: 2rem;
+    }
+    
+    .Footer__menu {
+        flex-basis: 100%;
+       align-items: flex-start;
+    }
+    .Footer__menu ul {
+        position: relative;
+        left: -25%;
+    }
+    .Footer__support ul {
+        position: relative;
+        left: 14%;
+    }
+    .Footer__newsletter {
+        flex-basis: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 769px) {
+    .Footer__container {
+       
+        padding: .2rem;
+       
+    }
+    .Footer__flex {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .Footer__container h4 {
+        margin-top: 2rem;
+        font-size: calc(1vw + 1vh + 1vmin);
+    }
+    
+    .Footer__menu {
+        flex-basis: 100%;
+       align-items: flex-start;
+    }
+    .Footer__menu ul {
+        position: relative;
+        left: -25%;
+    }
+    .Footer__support ul {
+        position: relative;
+        left: 13%;
+    }
+    .Footer__newsletter {
+        flex-basis: 100%;
+    }
+    .newsForm .buttons {
+        font-size: calc(1vw + 1vh + 1vmin);
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    .Footer__container {
+        padding: 0;
+    }
+    .Footer__container p {
+        font-size: calc(.8vw + 1vh + 1vmin);
+    }
+    .Footer__container a {
+        font-size: calc(.8vw + 1vh + 1vmin);
+    }
+    .Footer__flex {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .Footer__container h4 {
+        margin-top: 2rem;
+    }
+    
+    .Footer__menu {
+        flex-basis: 100%;
+       align-items: flex-start;
+    }
+    .Footer__menu ul {
+        position: relative;
+        left: -25%;
+    }
+    .Footer__support ul {
+        position: relative;
+        left: 8%;
+    }
+    .Footer__newsletter {
+        flex-basis: 100%;
+    }
+}
+@media screen and (max-width: 428px) {
+    .Footer__container {
+        padding: 0;
+    }
+    .Footer__container p {
+        font-size: calc(.8vw + 1vh + 1vmin);
+    }
+    .Footer__container a {
+        font-size: calc(.8vw + 1vh + 1vmin);
+    }
+    .Footer__flex {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .Footer__container h4 {
+        margin-top: 2rem;
+    }
+    
+    .Footer__menu {
+        flex-basis: 100%;
+       align-items: flex-start;
+    }
+    .Footer__menu ul {
+        position: relative;
+        left: -25%;
+    }
+    .Footer__support ul {
+        position: relative;
+        left: 8%;
+    }
+    .Footer__newsletter {
+        flex-basis: 100%;
+    }
+}
+
+
+@media screen and (max-width: 328px) {
+    .Footer__container {
+       
+        padding: 0;
+       
+    }
+    .Footer__flex {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .Footer__container h4 {
+        margin-top: 2rem;
+    }
+    
+    .Footer__menu {
+        flex-basis: 100%;
+       align-items: flex-start;
+    }
+    .Footer__menu ul {
+        position: relative;
+        left: -25%;
+    }
+    .Footer__support ul {
+        position: relative;
+        left: 4%;
+    }
+    .Footer__newsletter {
+        flex-basis: 100%;
+    }
+}

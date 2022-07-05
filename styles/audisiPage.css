@@ -1,0 +1,232 @@
+.audisi-background img {
+    width: 100%;
+}
+.waves {
+    margin-top: -2vh;
+}
+.container-audisi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+
+}
+.audisi-title {
+    text-align: center;
+    text-transform: uppercase;
+   
+}
+.audisi-title h3{
+    font-size: calc(2vw + 1vh + 1vmin);
+    padding: 0.5rem;
+    font-weight: 800;
+}
+.audisi-title h2{
+    font-size: calc(2vw + 1vh + 2vmin);
+    padding: 0.6rem;
+    font-weight: bold;
+    color: #b37b03;
+}
+.audisi-title h4 {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    padding: 0.5rem;
+}
+
+.listyle {
+    list-style: outside;
+}
+.Accordion-pendaftaran {
+    width: 100%;
+    padding: 3rem 8%;
+    margin-top: 6vh;
+}
+.Accordion-pendaftaran .button {
+    margin: 3rem 0;
+}
+.Accordion-pendaftaran .button a{
+    color: rgb(202, 201, 201);
+}
+.Accordion-pendaftaran .titleContent {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.Accordion-pendaftaran h5 {
+  font-size: 1.3rem;
+ 
+}
+.Accordion-pendaftaran ol li {
+    margin: 2rem 0 ;
+}
+.Accordion-pendaftaran ol li span {
+    font-weight: bold;
+    color: var(--thirty-color);
+}
+
+.accordion-button  {
+    color: rgb(160, 160, 160);
+    background:hsl(0 0% 10% / 0.9);
+    box-shadow: none;
+    outline: unset !important;
+    border: none !important;
+    transition: 0.3s linear-gradient;
+    
+}
+.accordion-button:hover {
+    background: #f37335; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f37335, #fdc830); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f37335, #fdc830);
+    transition: 0.3s linear;
+    color: rgb(221, 220, 220);
+}
+.accordion-button:not(.collapsed) {
+    color: rgb(240, 240, 240);
+    font-weight: bold;
+    background-color: #f79b23;
+    box-shadow: unset;
+}
+.accordion-button:not(.collapsed)::after {
+    content: '▼';
+    /* font-family: 'Font Awesome 5 Free'; */
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: rgba(240, 240, 240, 0.877);
+    position: absolute;
+    right: 0.5rem;
+    background-image: none;
+    background: #444;
+    padding: 0.2rem 0 0 .2rem;
+    top: 1rem; right: 1rem;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.685);
+    transition-duration: 0.8s;
+}
+.accordion-button:focus {
+    outline: unset !important;
+    z-index: 3;
+    border-color: unset !important;
+    outline: 0;
+    box-shadow: unset;
+}
+.accordion-collapse.show {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to bottom, #1d1d1d13, #2b2a2a00);
+}
+.accrodion-body {
+    padding: 0;
+    margin: 0;
+}
+.Accordion-pendaftaran ol {
+   
+    padding: 1rem ;
+    margin: 0 auto;
+}
+.button a {
+    color: rgb(238, 238, 238) !important;
+}
+.button {
+    margin: 1rem 0;
+    border: none;
+    outline: none;
+    position: relative;
+    background: #fdc830; 
+    background: -webkit-linear-gradient(to right, #fdc830, #f37335); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdc830, #f37335);
+    background-size: 200% 100%;
+    padding: calc(0.2rem + 0.1vw + 1vh + 1vmin);
+   
+    box-shadow: unset !important;
+    border-radius: 10px;
+    font-size: calc(0.50vw + 0.50vh + 1vmin);
+    transition: 0.3s linear;
+}
+  
+.button:before {
+    content: '';
+    background: linear-gradient(45deg, #00a2ff, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+.button:active:after {
+    background: transparent;
+}
+.button:hover:before {
+    opacity: 1;
+}
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+@media screen and (max-width: 940px) {
+    .Accordion-pendaftaran {
+        width: 100%;
+        padding: 2rem 4%;
+        margin-top: 4vh;
+    }
+    .Accordion-pendaftaran h5 {
+        font-size: 1.2rem;
+      }
+      .audisi-title {
+        text-align: center;
+        margin-top: 8vh;
+        padding: 0 2%;
+    }
+    
+    .Accordion-pendaftaran ol li {
+        font-size: .9rem;
+        padding: .5rem;
+    }
+    .button {
+        
+        padding: calc(0.8rem + 0.5vw + 0.001vh + 1vmin);
+    }
+      
+}
+
+@media screen and (max-width: 769px) {
+    .Accordion-pendaftaran h5 {
+        font-size: 1.3rem;
+      }
+      .audisi-title {
+        text-align: center;
+        margin-top: 8vh;
+        padding: 0 2%;
+    }
+    .audisi-title h4 {
+        letter-spacing: normal;
+        font-size: calc(1vw + 1vh + 2vmin);
+    }
+   
+      
+}
+
+@media screen and (max-width: 578px) {
+    .Accordion-pendaftaran h5 {
+        font-size: 1rem;
+      }
+      .audisi-title {
+        text-align: center;
+        margin-top: 4vh;
+        padding: 0 1%;
+    }
+   
+      
+}

@@ -1,0 +1,102 @@
+.gallery {
+    position: relative;
+    width: 100%;
+   
+    height: 100vh;
+}
+.gallery-title {
+    text-align: center;
+    padding-top: 15vh;
+    margin-bottom: 10vh;
+}
+.gallery-title h3{
+    font-size: calc(2vw + 1.8vh + 2vmin);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'James Fajardo';
+ }
+ .gallery-title h3 span{
+    color: #a2b0ce;
+    
+ }
+.gallery-content {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    position: relative;
+    top: 5%;
+}
+
+.gallery-image {
+    margin-top: 10vh;
+}
+.gallery-image .title {
+    text-align: center;
+}
+
+
+
+.image-gallery {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-content {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 3em;
+}
+.image-content li a img {
+    border: 4px solid #6e6f70 !important;
+    transition: 0.3s linear;
+    filter: grayscale(0.7);
+}
+.image-content li a img:hover {
+    transform: scale(1.09);
+    filter: grayscale(0);
+}
+div.imageImage {
+    overflow: hidden;
+}
+
+
+
+
+
+.center-button {
+    margin: 3rem auto;
+    width: fit-content;
+}
+
+.center-button button {
+    margin-top: 1.5rem;
+    color: white;
+    padding: .8rem 2.2rem;
+    background: #a2b0ce;
+    transition: .1s linear;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.center-button:hover button{
+    color: #ccd8ee;
+    background: #929fbd;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .image-content {
+        
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 1em;
+    }
+}
